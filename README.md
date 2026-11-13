@@ -1,2 +1,2 @@
 # BannerStudio
-A Banner Compiler for AuroraOS on 3DS.
+A Banner Compiler (and Studio) for AuroraOS on 3DS.
