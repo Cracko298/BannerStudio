@@ -1,0 +1,974 @@
+{
+  "title": "Atom",
+  "author": "BNR Studio example",
+  "texture": {
+    "max_size": 128,
+    "format": "auto",
+    "dither": true
+  },
+  "mesh": {
+    "position_bits": 12
+  },
+  "view": {
+    "auto": true,
+    "pitch": 18,
+    "yaw": 0.0,
+    "fov": 40.0,
+    "background_top": [
+      30,
+      26,
+      70
+    ],
+    "background": [
+      12,
+      18,
+      40
+    ],
+    "opaque": true,
+    "eye": [
+      0.0,
+      1.0,
+      4.0
+    ],
+    "target": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "sky": {
+    "path": "",
+    "scroll_u": 0.0,
+    "scroll_v": 0.0,
+    "strength": 255,
+    "size": 64,
+    "format": "i8"
+  },
+  "bloom": {
+    "enabled": false,
+    "intensity": 1.0,
+    "radius": 6.0
+  },
+  "nodes": [
+    {
+      "name": "Nucleus",
+      "source": "anchor",
+      "texture": "",
+      "tint": null,
+      "size": 1.0,
+      "center": true,
+      "detail": 1.0,
+      "tube": 0.15,
+      "parent": null,
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0,
+        45,
+        20
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": false,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Neutron0",
+      "source": "primitive:sphere",
+      "texture": "",
+      "tint": [
+        175,
+        185,
+        205
+      ],
+      "size": 0.42,
+      "center": true,
+      "detail": 0.6,
+      "tube": 0.15,
+      "parent": "Nucleus",
+      "offset": [
+        -0.15,
+        -0.15,
+        -0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": true,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Proton1",
+      "source": "primitive:sphere",
+      "texture": "",
+      "tint": [
+        235,
+        80,
+        70
+      ],
+      "size": 0.42,
+      "center": true,
+      "detail": 0.6,
+      "tube": 0.15,
+      "parent": "Nucleus",
+      "offset": [
+        -0.15,
+        -0.15,
+        0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": true,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Proton2",
+      "source": "primitive:sphere",
+      "texture": "",
+      "tint": [
+        235,
+        80,
+        70
+      ],
+      "size": 0.42,
+      "center": true,
+      "detail": 0.6,
+      "tube": 0.15,
+      "parent": "Nucleus",
+      "offset": [
+        -0.15,
+        0.15,
+        -0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": true,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Neutron3",
+      "source": "primitive:sphere",
+      "texture": "",
+      "tint": [
+        175,
+        185,
+        205
+      ],
+      "size": 0.42,
+      "center": true,
+      "detail": 0.6,
+      "tube": 0.15,
+      "parent": "Nucleus",
+      "offset": [
+        -0.15,
+        0.15,
+        0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": true,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Proton4",
+      "source": "primitive:sphere",
+      "texture": "",
+      "tint": [
+        235,
+        80,
+        70
+      ],
+      "size": 0.42,
+      "center": true,
+      "detail": 0.6,
+      "tube": 0.15,
+      "parent": "Nucleus",
+      "offset": [
+        0.15,
+        -0.15,
+        -0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": true,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Neutron5",
+      "source": "primitive:sphere",
+      "texture": "",
+      "tint": [
+        175,
+        185,
+        205
+      ],
+      "size": 0.42,
+      "center": true,
+      "detail": 0.6,
+      "tube": 0.15,
+      "parent": "Nucleus",
+      "offset": [
+        0.15,
+        -0.15,
+        0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": true,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Neutron6",
+      "source": "primitive:sphere",
+      "texture": "",
+      "tint": [
+        175,
+        185,
+        205
+      ],
+      "size": 0.42,
+      "center": true,
+      "detail": 0.6,
+      "tube": 0.15,
+      "parent": "Nucleus",
+      "offset": [
+        0.15,
+        0.15,
+        -0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": true,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Proton7",
+      "source": "primitive:sphere",
+      "texture": "",
+      "tint": [
+        235,
+        80,
+        70
+      ],
+      "size": 0.42,
+      "center": true,
+      "detail": 0.6,
+      "tube": 0.15,
+      "parent": "Nucleus",
+      "offset": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": true,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Ring0",
+      "source": "primitive:torus",
+      "texture": "",
+      "tint": [
+        70,
+        100,
+        150
+      ],
+      "size": 3.0,
+      "center": true,
+      "detail": 0.9,
+      "tube": 0.012,
+      "parent": null,
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": false,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Electron0",
+      "source": "primitive:sphere",
+      "texture": "",
+      "tint": [
+        100,
+        210,
+        255
+      ],
+      "size": 0.2,
+      "center": true,
+      "detail": 0.5,
+      "tube": 0.15,
+      "parent": "Nucleus",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 1.48,
+        "radius_b": 1.48,
+        "speed": 110,
+        "phase": 0,
+        "tilt_x": 0,
+        "tilt_z": 0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": false,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Ring1",
+      "source": "primitive:torus",
+      "texture": "",
+      "tint": [
+        70,
+        100,
+        150
+      ],
+      "size": 3.0,
+      "center": true,
+      "detail": 0.9,
+      "tube": 0.012,
+      "parent": null,
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        62,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": false,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Electron1",
+      "source": "primitive:sphere",
+      "texture": "",
+      "tint": [
+        100,
+        210,
+        255
+      ],
+      "size": 0.2,
+      "center": true,
+      "detail": 0.5,
+      "tube": 0.15,
+      "parent": "Nucleus",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 1.48,
+        "radius_b": 1.48,
+        "speed": -140,
+        "phase": 120,
+        "tilt_x": 62,
+        "tilt_z": 0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": false,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Ring2",
+      "source": "primitive:torus",
+      "texture": "",
+      "tint": [
+        70,
+        100,
+        150
+      ],
+      "size": 3.0,
+      "center": true,
+      "detail": 0.9,
+      "tube": 0.012,
+      "parent": null,
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        -62,
+        0,
+        25
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": false,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Electron2",
+      "source": "primitive:sphere",
+      "texture": "",
+      "tint": [
+        100,
+        210,
+        255
+      ],
+      "size": 0.2,
+      "center": true,
+      "detail": 0.5,
+      "tube": 0.15,
+      "parent": "Nucleus",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 1.48,
+        "radius_b": 1.48,
+        "speed": 170,
+        "phase": 240,
+        "tilt_x": -62,
+        "tilt_z": 25
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": false,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    }
+  ],
+  "jingle": {
+    "source": "builtin",
+    "codec": "dsp",
+    "rate": 16000,
+    "channels": 1,
+    "max_seconds": 3.0,
+    "normalise": true,
+    "trim": true,
+    "loop": false
+  },
+  "icon": {
+    "path": "atom_icon.png",
+    "format": "auto",
+    "animation": false
+  },
+  "image": {
+    "path": "atom_label.png",
+    "screen": "top",
+    "x": 8,
+    "y": 8,
+    "scale": 1.0,
+    "format": "i4"
+  },
+  "output": "atom.bnr"
+}

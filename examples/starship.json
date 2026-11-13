@@ -1,0 +1,250 @@
+{
+  "title": "Starship",
+  "author": "BNR Studio example",
+  "texture": {
+    "max_size": 64,
+    "format": "auto",
+    "dither": true
+  },
+  "mesh": {
+    "position_bits": 12
+  },
+  "view": {
+    "auto": true,
+    "pitch": 25,
+    "yaw": 0.0,
+    "fov": 40.0,
+    "background_top": [
+      30,
+      26,
+      70
+    ],
+    "background": [
+      6,
+      8,
+      20
+    ],
+    "opaque": true,
+    "eye": [
+      0.0,
+      1.0,
+      4.0
+    ],
+    "target": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "sky": {
+    "path": "",
+    "scroll_u": 0.0,
+    "scroll_v": 0.0,
+    "strength": 255,
+    "size": 64,
+    "format": "i8"
+  },
+  "bloom": {
+    "enabled": false,
+    "intensity": 1.0,
+    "radius": 6.0
+  },
+  "nodes": [
+    {
+      "name": "Star",
+      "source": "primitive:sphere",
+      "texture": "sun.png",
+      "tint": null,
+      "size": 1.6,
+      "center": true,
+      "detail": 1.0,
+      "tube": 0.15,
+      "parent": null,
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0,
+        18,
+        0
+      ],
+      "orbit": {
+        "radius_a": 0.0,
+        "radius_b": 0.0,
+        "speed": 0.0,
+        "phase": 0.0,
+        "tilt_x": 0.0,
+        "tilt_z": 0.0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": false,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Pod",
+      "source": "cargo_pod.glb",
+      "texture": "",
+      "tint": null,
+      "size": 1.1,
+      "center": true,
+      "detail": 1.0,
+      "tube": 0.15,
+      "parent": "Star",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0,
+        50,
+        0
+      ],
+      "orbit": {
+        "radius_a": 2.6,
+        "radius_b": 1.9,
+        "speed": 50,
+        "phase": 0,
+        "tilt_x": 8,
+        "tilt_z": 6
+      },
+      "bob": {
+        "amplitude": 0.12,
+        "hz": 0.5,
+        "phase": 0
+      },
+      "follow_rotation": false,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    },
+    {
+      "name": "Moon",
+      "source": "primitive:sphere",
+      "texture": "",
+      "tint": [
+        190,
+        195,
+        210
+      ],
+      "size": 0.3,
+      "center": true,
+      "detail": 1.0,
+      "tube": 0.15,
+      "parent": "Pod",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orbit": {
+        "radius_a": 0.7,
+        "radius_b": 0.7,
+        "speed": -160,
+        "phase": 0,
+        "tilt_x": 20,
+        "tilt_z": 0
+      },
+      "bob": {
+        "amplitude": 0.0,
+        "hz": 0.0,
+        "phase": 0.0
+      },
+      "follow_rotation": false,
+      "glow": 0,
+      "unlit": false,
+      "additive": false,
+      "billboard": false,
+      "pulse": {
+        "hz": 0.0,
+        "depth": 0.0,
+        "phase": 0.0
+      },
+      "texture_size": 0,
+      "texture_format": ""
+    }
+  ],
+  "jingle": {
+    "source": "builtin",
+    "codec": "dsp",
+    "rate": 16000,
+    "channels": 1,
+    "max_seconds": 3.0,
+    "normalise": true,
+    "trim": true,
+    "loop": false
+  },
+  "icon": {
+    "path": "",
+    "format": "auto",
+    "animation": false
+  },
+  "image": {
+    "path": "",
+    "screen": "top",
+    "x": 0,
+    "y": 0,
+    "scale": 1.0,
+    "format": "auto"
+  },
+  "output": "starship.bnr"
+}
